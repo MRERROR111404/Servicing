@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/* لتعيين لون الـ scroll */
+::-webkit-scrollbar {
+  background-color: white;/* لون المنطقة الخلفية للشريط */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:  #0355cc; /* لون الشريط */
+}
+
+/* لتعيين عرض الـ scroll */
+::-webkit-scrollbar {
+  width: 0.3%;
+}
+
+
+
+
+#scroll-btn {
+  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 999;
+  border-radius: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+ height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: all 1s ease;
+  outline: none;
+}
+
+
+.fa-arrow-up{
+  font-size: 20px;
+  transition: all 1s ease;
+}
+
+
+
+button img{
+  animation: slideContinuous2 1s linear infinite;
+}
+
+
+
+@keyframes slideContinuous2 {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-5px);
+  } /* تغيير القيمة حسب الحركة المطلوبة */
+  100% {
+    transform: translatey(0);
+  }
+}
+
+
+
+
+.info{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+
+
+.info img{
+margin-right:1%;
+
+
+}
+
+
+.image-info2{
+
+    text-align: right;
+}
+
+
+
+
+
+main {
+  overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background-color: #d1e3ff;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+  }
+  
+  .description-main {
+    width: 45%;
+  }
+  
+  .description-main h1 {
+    color: #0355cc;
+    width: 70%;
+    font-size: 70px;
+  }
+  
+  .description-main p {
+    color: rgb(59, 55, 55);
+    line-height: 1.9rem;
+    font-size: 20px;
+    width: 90%;
+    margin-top: 4%;
+  }
+  
+  button {
+    outline: none;
+  
+  }
+  .navbar-brand {
+    font-weight: 800;
+    font-size: 25px;
+  }
+  
+  .btn-control {
+    border: none;
+    border-radius: 10px;
+  
+    background-color: #ff8a1d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border: 1px solid #ff8a1d;
+  }
+  
+  .btn-control:hover {
+    background-color: #d1e3ff;
+    border: 1px solid #ff8a1d;
+    color: #ff8a1d;
+  }
+  
+
+  
+  .description-main button {
+    margin-top: 4%;
+  }
+  
+  .image-main {
+    display: block;
+    justify-content: center;
+    width: 35%;
+  
+
+  }
+  
+  @media only screen and (max-width: 769px) {
+    main {
+      display: block;
+      height: 100%;
+    }
+  
+    main .description-main {
+      text-align: center;
+      width: 100%;
+    }
+  
+    main .description-main h1 {
+      padding-top: 5%;
+      text-align: center;
+      font-size: 40px;
+      width: 100%;
+    }
+  
+    main .description-main p {
+      width: 100%;
+      padding: 5% 10%;
+      text-align: left;
+    }
+  
+    .image-main {
+      padding-top: 10%;
+     
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   
+    }
+
+.info img{
+    width: 20%;
+    height: 20%;
+}
+
+.image-info{
+
+    padding: 2%;
+}
+
+
+
+.image-info2{
+  
+    padding: 2%;
+}
+
+
+
+
+
+
+
+
+
+  }
+  
+  @media only screen and (min-width: 766px) and (max-width: 800px) {
+    .image-main img {
+      width: 40%;
+      height: 40%;
+    }
+  }
+  
+  @media only screen and (min-width: 1023px) and (max-width: 1050px) {
+    .image-main img {
+      width: 100%;
+      height: 100%;
+      margin-top: 40%;
+    }
+    main{
+        height: 100%;
+    }
+
+    .description-main{
+        width: 50%;
+    }
+
+    main h1{
+width: 100%;
+
+    }
+  }
+  
+
+
+  /* about*/
+
+  .about{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+    
+  }
+  .description-about{
+    width: 30%;
+    
+  }
+
+  .description-about p{
+    width: 100%;
+    line-height: 1.7;
+    font-size: 20px;
+   
+
+  }
+
+
+  .about-btn{
+
+    background-color: #0355cc;
+    border: 1px solid #0355cc;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 7px;
+    margin-top: 5%;
+  }
+
+
+  .about-btn:hover{
+    background-color: white;
+    border: 1px solid #0355cc;
+color: #0355cc;
+  }
+
+
+  .image-about{
+    width: 40%;
+  }
+
+
+  @media only screen and (max-width: 600px)  {
+
+.about{
+  display: block;
+}
+
+  .description-about{
+width: 100%;
+padding: 5%;
+}
+
+
+
+
+.image-about{
+margin-top: 1%;
+width: 100%;
+
+}
+  }
+
+
+
+  /*prof*/
+
+  .prof{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d1e3ff;
+    margin-top: 10%;
+    padding-bottom: 3%;
+  }
+
+
+  .image-prof{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+  }
+
+
+
+  .description-prof{
+    width: 50%;
+    margin-top: 3%;
+  }
+
+  .prof h1{
+    color: #0355cc;
+
+  }
+
+
+  .prof p{
+    width: 100%;
+    line-height: 1.7;
+    font-size: 20px;
+    width: 90%;
+  }
+
+
+  
+
+  .pro-btn{
+
+    background-color: #ff8a1d;
+    border: 1px solid #ff8a1d;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 7px;
+    margin-top: 5%;
+  }
+
+
+  .pro-btn:hover{
+    background-color: #d1e3ff;
+    border: 1px solid #ff8a1d;
+color: #ff8a1d;
+  }
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 600px)  {
+
+    .prof{
+display: block;
+
+
+    }
+
+
+
+    .image-prof{
+width: 100%;
+padding-top: 10%;
+    }
+
+
+
+    .description-prof{
+width: 100%;
+padding: 5%;
+    }
+  
+  
+
+  }
+
+  /*services*/
+
+  .services h1{
+    text-align: center;
+    margin-top: 10%;
+  }
+
+.cards-services{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card1{
+  width: 30%;
+  margin-top: 4%;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.15);
+  padding: 2%;
+
+}
+
+
+.card1:hover{
+background-color: #ff8a1d;
+color: white;
+cursor: pointer;
+
+
+}
+
+.image-services{
+  display: flex;
+  justify-content: center;
+}
+
+
+.card1 h3{
+text-align: center;
+
+}
+
+
+.card1 p{
+  text-align: center;
+  
+  }
+
+
+  .btn-services{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+
+  @media only screen and (max-width: 600px)  {
+.cards-services{
+  display: block;
+  padding: 10%;
+}
+
+
+.card1{
+width: 100%;
+padding: 5%;
+margin-top: 10%;
+
+}
+
+
+
+.services h1{
+margin-top: 20%;
+}
+
+  }
+
+
+
+
+
+
+
+
+/*client*/
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+
+/* Style the container */
+.container1 {
+  border-radius: 5px;
+  background-color: #d1e3ff;
+  padding: 20px;
+  margin: 5%;
+
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bttn-form{
+  margin-top: 5%;
+}
+
+.btn-form {
+    border: none;
+    border-radius: 10px;
+  width: 15%;
+    background-color: #ff8a1d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border: 1px solid #ff8a1d;
+  }
+  
+  .btn-form:hover {
+    background-color: white;
+    border: 1px solid #ff8a1d;
+    color: #ff8a1d;
+  }
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+.container1{
+  margin-top: 15%;
+  padding: 5%;
+
+}
+
+.btn-form {
+  margin-top: 10%;
+  width: 50%;
+}
+
+}
+
+
+/*footer*/
+
+footer{
+  margin-top: 10%;
+  background-color:#0355cc;
+  color: white;
+}
+footer h2{
+font-size: 27px;
+}
+
+.touch{
+  display: flex;
+  justify-content: space-around;
+}
+.image-touch{
+  
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+}
+.image-touch img{
+  display: flex;
+  justify-content: center;
+  border: 1px solid none;
+  background-color: white;
+  border-radius: 100%;
+  height: 65px;
+  width: 65px;
+  align-items: center;
+  padding:4%;
+}
+
+
+
+.image-touch img:hover{
+cursor: pointer;
+}
+
+.touch1{
+  width: 30%;
+}
+
+.touch h4{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+
+.right{
+  border-top: 1px solid white;
+  margin-top: 3%;
+  overflow: hidden;
+}
+
+
+.right h3{
+font-size: 18px;
+text-align: center;
+padding: 1%;
+}
+
+
+@media screen and (max-width: 600px) {
+.touch{
+  display: block;
+}
+
+.touch1{
+width: 100%;
+
+}
+
+}
+
+
+
+
+
+.progress2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 1%;
+  background-color: black;
+
+}
+
+.bar{
+  display: block;
+height: 100%;
+width: 0;
+
+background-color: #0355cc;
+}
+
+
